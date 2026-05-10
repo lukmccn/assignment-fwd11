@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,3 +10,28 @@
 
 }
 
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #121421;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    height: 65px;
+    border-bottom: 1px solid white;
+}
+
+header a .logo img {
+    height: 16px;
+    width: 16px;
+    background-color: white;
+}
+
+@media (max-width: 800px){
+    header {
+        background-color: red;
+    }
+}
