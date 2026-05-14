@@ -5,39 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/mobile.css">
+    <!-- <link rel="stylesheet" href="src/debug.css"> -->
+    <link rel="stylesheet" href="src/test.css">
 </head>
-<body id="content">
-    <header id="wrapper-header">
-        <a class="logo" href="#">
-            <img src="./assets/img/logo.png" alt="Logo DebiTech" />
-            <h1>DebiTech</h1>
-        </a>
-        <nav class="nav-header">
-            <ul>
+<body class="content">
+    <header class="wrapper-header">
+        <div aria-label="logo" class="logo">
+            <a class="logo-img" href="#">
+                <img src="./assets/img/logo.png" alt="Logo DebiTech" />
+            </a>
+            <a href="#">
+                <h1>DebiTech</h1>
+            </a>
+        </div>
+        <nav aria-label="navigasi"">
+            <ul class="nav-list">
                 <li><a href="#">Explore</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Cart</a></li>
             </ul>
-            <button id="button-header">Login</button>
         </nav>
+        <button class="button-header">Login</button>
     </header>
 
-    <main id="wrapper-main">
-        <section id="hero">
-            <h2>Discover the Latest Tech Gadgets</h2>
-            <p>Explore a curated marketplace of AI-powered tools designed to transform your workflow and unlock new possibilities.</p>
+    <main class="wrapper-main">
+        <section class="hero">
+            <div class="image-hero">
+                <h2>Discover the Future of Work with AI</h2>
+                <p>Explore a curated marketplace of AI-powered tools designed to transform your workflow and unlock new possibilities.</p>
+            </div>
         </section>
 
-        <section id="categories">
+        <section class="categories">
             <h2>Categories</h2>
-            <div>
+            <div class="card">
                 <div class="img-categories"></div>
                 <h3>Productifity</h3>
                 <p>Boost your efficiency with AI-powered productivity tools.</p>
             </div>
         </section>
 
-        <section id="featured-product">
+        <section class="featured-product">
             <h2>Feature Product</h2>
             <div class="wrapper-product">
                 <div class="img-product">
@@ -50,7 +59,7 @@
             </div>
         </section>
 
-        <section id="trending">
+        <section class="trending">
             <h2>Trending</h2>
             <div class="img-trending">
                 <img src="" alt="gambar list trending" />
@@ -60,8 +69,8 @@
         </section>
     </main>
 
-    <footer id="wrapper-footer">
-        <nav>
+    <footer class="wrapper-footer">
+        <nav class="red blue">
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
