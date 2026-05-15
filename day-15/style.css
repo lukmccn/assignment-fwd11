@@ -94,9 +94,7 @@ body {
 
 
 /***** HERO SECTION *****/
-.hero {
-    padding: 16px 16px;
-}
+.hero { padding: 16px 16px; }
 .image-hero {
     display: flex;
     flex-flow: row wrap;
@@ -113,7 +111,7 @@ body {
     position: absolute;
     inset: 0;
     opacity: 0.6;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('./assets/img/img-hero.png');
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('./assets/img/hero.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,16 +135,69 @@ body {
     letter-spacing: 0px;
 }
 
+/***** CATEGORIES SECTION *****/
+.categories, .featured-product, .trending {
+    padding: 20px 0px 16px 16px;
+}
+.card-container {
+    display: flex;
+    overflow-y: auto;
+    gap: 12px;
+}
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    display: inline-flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    align-content: center;
+    width: 176px;
+}
+.card > * {
+    flex: 0 0 176px;
+}
+.img-card {
+    height: 176px;
+    border-radius: 12px;
+    background-color: rgba(81, 172, 163, 1);
+}
+.desc-card { letter-spacing: 0px; }
+.desc-card > h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: medium;
+}
+.desc-card > p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #919CC9;
+    padding-bottom: 12px;
+}
 
 /***************** LAYOUTING MAIN *****************/
 
-.wrapper-footer, .wrapper-main, .wrapper-header { min-width: 310px; }
+section > h2 {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+.wrapper-header, wrapper-footer, .wrapper-main { min-width: 310px; }
 
 .wrapper-main {
     flex: 1 100%;
-    padding: 20px 16px;
+    padding: 20px 16px 19px 16px;
+}
+.wrapper-main > section:last-of-type::after {
+    content: '';
+    display: block;
+    height: 40px;
 }
 .wrapper-main > *, .wrapper-footer > * { max-width: 960px; margin: auto auto; }
+
+section > h2 { margin-bottom: 12px; }
 
 .wrapper-footer {
     padding: 40px 20px;
